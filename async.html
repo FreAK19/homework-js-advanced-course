@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>hello world</h1>
+</div>
+<script>
+    setTimeout(() => {
+      alert('hello');
+    }, 4);
+    console.time('time');
+    for(let i = 1; i < 2000000000; i++){
+      let a = i/i;
+    };
+    console.timeEnd('time');
+</script>
+</body>
+</html>

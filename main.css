@@ -1,0 +1,133 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    font-family: cursive;
+    margin: 0 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.btn-action {
+    padding: 20px;
+    width: 20%;
+    border-radius: 4px;
+    background: blueviolet;
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 1px 2px 6px #222;
+}
+
+.btn-action:hover {
+    background: #9768e2;
+}
+
+.btn-action:active {
+    box-shadow: inset 2px 1px 6px #222;
+}
+
+#out, #output {
+    background: aliceblue;
+    font-size: 1.3em;
+    padding: 30px;
+}
+
+input, textarea {
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 17px 0 0 0;
+    width: 100%;
+}
+
+textarea {
+    margin-bottom: 10px;
+    resize: none;
+}
+
+label {
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+.link {
+    display: block;
+}
+@media screen and (max-width: 500px) {
+    .btn-action {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media all and (max-width: 320px){
+    .heading {
+        font-size: 1rem;
+    }
+}
+
+/*Game */
+
+.heading {
+    text-align: center;
+    padding-top: calc(50vh / 2 );
+    color: #5a5a5a;
+    font-family: monospace;
+    font-size: 15rem;
+    display: block;
+    text-shadow: 3px -1px 7px greenyellow;
+    pointer-events: none;
+
+}
+.game__container {
+    width: 100vw;
+    height: 100vh;
+    background: url("image/pattern-1031220_1280.jpg") no-repeat;
+    background-size: cover;
+}
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #9768e2;
+    box-shadow: inset 0px 4px 62px black, 1px -2px 6px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.line {
+    position: absolute;
+
+}
+/*date*/
+.clock {
+    margin: 0 auto;
+    width: 50vw;
+    height: 100vh;
+    background: url('image/clock.svg') no-repeat;
+    background-size: cover;
+}
+.wise__block {
+    width: 25px;
+    height: 326px;
+}
+.wise {
+    position: relative;
+    top: 274px;
+    left: 335px;
+    transform-origin: top left;
+    background: #5e5f67;
+    width: 24px;
+    display: inline-block;
+    height: 163px;
+    border-radius: 9px;
+}

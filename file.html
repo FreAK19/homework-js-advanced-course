@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        .active {
+            display: inline-block !important;
+            background: #ea99b6;
+            color: #fff;
+            font-size: 1.3em;
+            margin: 0 20px;
+            padding: 39px;
+            position: absolute;
+            border-top-left-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="">
+        <label for="file" data-title="Here some text">Please choose file from disk</label>
+        <input type="file" id="file">
+    </form>
+    <div class="preview">
+        <img src="" alt="">
+    </div>
+</div>
+<script src="file.js"></script>
+<script>
+  const elem = document.querySelector('[data-title]');
+  const data = elem.dataset.title;
+  const span = document.createElement('span');
+  elem.addEventListener('mouseover', (e) => {
+    e.preventDefault();
+    span.innerText = data;
+    span.style.display = 'none';
+    elem.appendChild(span);
+    span.classList.add('active');
+  }, false);
+  elem.addEventListener('mouseout', () => {
+    span.classList.remove('active');
+  }, false);
+</script>
+</body>
+</html>

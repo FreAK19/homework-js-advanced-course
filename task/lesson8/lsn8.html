@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" manifest="app.appcache">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 8</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .task {
+            padding: 50px;
+            text-align: center;
+        }
+        .result > ul > li {
+            text-align: left;
+            padding: 8px;
+            font-size: 2em;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: #9768e2;
+            opacity: .6;
+            display: flex;
+            justify-content: space-around;
+        }
+        input {
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        ul li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task">
+            <h1>Task 1</h1>
+            <button id="city-btn">Open city list</button>
+            <div class="result"></div>
+        </div>
+        <div class="task">
+            <h1>Task 2</h1>
+            <form action="">
+                <input type="search" id="city">
+                <div class="search__result"></div>
+            </form>
+        </div>
+    </div>
+    <script src="lesson8.js"></script>
+</body>
+</html>

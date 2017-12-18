@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="geo">
+            <h1>Geolocation API</h1>
+            <button id="btn" class="btn-action">click to get position</button>
+            <button id="b" class="btn-action">show info</button>
+            <div id="output"></div>
+            <div id="out"></div>
+        </div>
+        <div class="storage">
+            <h1>Storage API</h1>
+            <div class="form__wrapper">
+                <form action="">
+                    <label for="email">Input your email address</label>
+                    <input type="email" name="email" id="email" placeholder="email here">
+                    <input type="text" name="subject" id="subject" placeholder="Tema">
+                    <input type="text" name="company" id="company" placeholder="company">
+                    <textarea id="message" rows="7" placeholder="Your message" name="msg">
+
+                    </textarea>
+                    <button type="submit" class="btn-action" id="js-submit">SEND</button>
+                </form>
+            </div>
+        </div>
+        <div class="game">
+            <a href="game.html" class="btn-action link">Go to game</a>
+            <a href="file.html" class="btn-action link">Go to file API</a>
+        </div>
+    </div>
+    <script src="geolocation.js"></script>
+    <script src="storage.js"></script>
+</body>
+</html>

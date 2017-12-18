@@ -1,0 +1,23 @@
+{
+  "name": "learn",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha "
+  },
+  "author": "Andrew kiri4encko",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "lodash": "^4.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.1.0",
+    "jasmine": "^2.6.0",
+    "mocha": "^3.4.2"
+  }
+}
